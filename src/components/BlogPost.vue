@@ -1,7 +1,7 @@
 <script setup>
 
 // defineProps(['id', 'title', 'body','colorText'])
-
+const emits = defineEmits(['click'])
 defineProps({
     title: String,
     id: Number,
@@ -17,6 +17,7 @@ defineProps({
         <div class="card-body">
             <h5 class="card-title" >{{ id }} - {{ title }}</h5>
             <p>{{ body }}</p>
+            <button class="btn btn-outline-primary" @click="emits('click',body)">Favorite</button>
         </div>
     </div>
 </template>
