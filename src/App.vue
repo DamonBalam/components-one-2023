@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <h1>Hola vue!</h1>
-  </div>
+  <h1>App</h1>
+  <ButtonCounter />
 </template>
 
 <script setup>
+import ButtonCounter from './components/ButtonCounter.vue';
 
 </script>
 
